@@ -75,6 +75,37 @@ $('[data-modal]').on('click', function(){
     $($(this).data('modal')).removeClass('hidden')
 });
 
+
+
+
+
+
+
+
+//// reviews slider
+
+$('.reviews-slider').slick({
+    slidesToShow: 1,
+    arrows: false,
+    dots:true,
+    adaptiveHeight: true,
+    autoplay: true,
+    autoplaySpeed: 2000
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //// Слайдер
 $('.s5 .slider').slick({
     slidesToShow: 3,
