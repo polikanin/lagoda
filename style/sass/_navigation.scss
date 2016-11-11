@@ -1,0 +1,99 @@
+.nav-first{
+  padding: 5px 0 3px 0;
+
+  .nav-list{
+    color: #686868;
+    font-size: 14px;
+    font-weight: 400;
+    width: 399px;
+    margin-left: -6px;
+    padding-top: 6px;
+  }
+
+  .towns{
+    position: relative;
+    z-index: 1;
+    color: #076aa6;
+    font-size: 14px;
+    font-weight: 400;
+    margin-right: 26px;
+    padding-bottom: 6px;
+
+    *::selection {
+      background: transparent;
+    }
+    *::-moz-selection {
+      background: transparent;
+    }
+
+    .current-city{
+      position: relative;
+      z-index: 1;
+      border-bottom: 1px dashed #076aa6;
+      cursor: pointer;
+
+      &:before{
+        position: absolute;
+        z-index: 1;
+        width: 8px;
+        height: 13px;
+        display: block;
+        background-image: url("../image/header/pin.png");
+        content: '';
+        top: 1px;
+        left: -19px;
+      }
+
+      &:after{
+        position: absolute;
+        z-index: 1;
+        width: 7px;
+        height: 4px;
+        display: block;
+        content: '';
+        background-image: url("../image/header/arrow-down.png");
+        top: 6px;
+        right: -19px;
+      }
+    }
+
+    .city-dropdown{
+      display: none;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      z-index: 1;
+      background-color: white;
+      padding: 14px 10px 10px 10px;
+      border-radius: 0 0 4px 4px;
+      box-shadow: -5px 10px 10px -5px black;
+
+      li{
+        margin-top: 9px;
+
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .active + .city-dropdown{
+      display: block;
+    }
+  }
+}
+
+.nav-second{
+  padding: 18px 0 21px 0;
+  background-color: #fc0;
+  color: #2e2e2e;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  width: 100%;
+
+  ul{
+    width: 1000px;
+    margin: 0 auto;
+  }
+}

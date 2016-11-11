@@ -1,0 +1,183 @@
+.form-sro{
+  background-image: url("../image/ui/pattern.png");
+  background-repeat: repeat;
+  background-size: inherit;
+  padding: 72px 0 75px 0;
+
+  .title{
+    color: black;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 18px;
+  }
+
+  .subtitle{
+    color: #3f3f3f;
+    font-size: 17px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+}
+
+.step-form{
+
+  .step{
+    border: 3px dashed #fc0;
+    margin-bottom: 30px;
+  }
+
+  &_heading{
+    color: black;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+    margin-bottom: 43px;
+  }
+
+  .btn{
+    height: 60px;
+    background-color: #0874bb;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    @include transition();
+
+    &:hover{
+      background-color: #fc0;
+      color: black;
+    }
+
+    &__sm{
+      width: 213px;
+    }
+
+    &__md{
+      width: 290px;
+    }
+
+    &__lg{
+      width: 441px;
+    }
+
+    &-next,
+    &-prev{
+      background-position: center;
+      background-repeat: no-repeat;
+      color: #2e2e2e;
+      font-size: 14px;
+      font-weight: 500;
+      width: 124px;
+      height: 26px;
+    }
+
+    &-prev{
+      background-image: url("../image/step-form/prev.png");
+    }
+
+    &-next{
+      background-image: url("../image/step-form/next.png");
+    }
+
+    &-result{
+      color: #3d3d3d;
+      font-size: 17px;
+      font-weight: 500;
+      width: 394px;
+      height: 46px;
+      background-image: url("../image/step-form/result.png");
+    }
+  }
+
+  .container{
+    background-color: white;
+
+    &__top{
+      background-color: #f2f0eb;
+      padding: 39px 50px 52px 50px;
+
+      .progress-bar{
+        margin: 0 auto 0 auto;
+      }
+    }
+
+    &__bottom{
+      background-color: white;
+      padding: 34px 50px 30px 50px;
+      @include flex-box();
+      @include justify-content(center);
+    }
+  }
+
+  .progress-bar{
+    width: 290px;
+    height: 26px;
+    background-color: whitesmoke;
+    border: 1px solid #ddd;
+    position: relative;
+    z-index: 1;
+    margin: 0 15px;
+    padding: 2px;
+
+    &:after{
+      content: attr(data-progress) '%';
+      position: absolute;
+      top: 0;
+      right: 8px;
+      z-index: 2;
+      color: #00273d;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 26px;
+    }
+
+    &__white{
+      &:after{
+        color: white;
+      }
+    }
+
+    .line{
+      height: 100%;
+      background-color: #0874bb;
+    }
+  }
+
+  form{
+    @include flex-box();
+    @include justify-content(center);
+
+    .input{
+      width: 504px;
+      height: 46px;
+      background-color: white;
+      border: 1px solid #ddd;
+      padding-left: 14px;
+      color: #979797;
+      font-size: 12px;
+      font-weight: 400;
+    }
+  }
+
+  .hidden{
+    display: none;
+  }
+
+  .result-table{
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    margin-bottom: 30px;
+
+    tr{
+      th,
+      td{
+        border: 2px solid grey;
+        padding: 5px 10px;
+        text-align: center;
+      }
+    }
+  }
+}

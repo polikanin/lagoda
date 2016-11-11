@@ -1,0 +1,76 @@
+.footer{
+  background-image: url("../image/footer/bg-footer.png");
+  color: white;
+  padding: 24px 0 40px 0;
+
+  .title{
+    color: #fc0;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 19px;
+  }
+
+  .subtitle{
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 31px;
+  }
+
+  .for-list{
+    .list{
+      display: inline-block;
+      vertical-align: top;
+      color: #c2edff;
+      font-size: 12px;
+      font-weight: 400;
+      margin-right: 29px;
+
+      &:last-of-type{
+        margin-right: 0;
+      }
+
+      li{
+        margin-bottom: 4px;
+      }
+    }
+  }
+
+  .contacts{
+    width: 270px;
+    margin-top: -2px;
+    font-size: 14px;
+
+    .subtitle{
+      font-weight: 400;
+      margin-bottom: 6px;
+    }
+
+    .phone{
+      display: inline-block;
+      vertical-align: top;
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
+
+    .mail{
+      font-weight: 400;
+      margin-top: 17px;
+
+      a{
+        color: #bbe4f5;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.footer-end{
+  padding: 23px 0 23px 0;
+
+  .text{
+    color: #323232;
+    font-size: 14px;
+    font-weight: 400;
+  }
+}

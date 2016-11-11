@@ -1,0 +1,16 @@
+.iso-page{
+  .first-screen{
+    background-image: url("../image/iso-page/bg.png");
+  }
+
+  .text-start{
+    padding: 37px 0 41px 0;
+
+    .text{
+      color: #707070;
+      font-size: 14px;
+      font-weight: 400;
+      text-align: center;
+    }
+  }
+}

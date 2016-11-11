@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="script/slick-1.5.0/slick/slick.css"/>
+    <link rel="stylesheet" href="script/fancyBox/source/jquery.fancybox.css"/>
+    <link rel="stylesheet" href="style/style.css"/>
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+
+</head>
+<body>
+
+<div class="wrapper-all">
+
+    <!-- STEP_FORM -->
+    <section class="form-sro">
+        <div class="wrapper">
+            <h2 class="title">
+                Автоматический расчет стоимости взноса в комп. фонд.
+            </h2>
+            <p class="subtitle">
+                Оформление допуска СРО бесплатно. Вы платите только обязательный взнос в комп. фонд,<br>
+                предусмотренный законодательством РФ.
+            </p>
+
+
+            <div class="step-form">
+                <div class="step" data-step="0">
+                    <div class="container container__top">
+                        <h2 class="step-form_heading">Выберите тип допуска</h2>
+
+                        <div class="flex_between-sm">
+                            <button class="btn btn__md" data-value="Строительство">Строительство</button>
+                            <button class="btn btn__md" data-value="Проектирование">Проектирование</button>
+                            <button class="btn btn__md" data-value="Изыскание">Изыскание</button>
+                        </div>
+                    </div>
+
+                    <div class="container container__bottom">
+                        <div class="progress-bar" data-progress="0">
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step hidden" data-step="1">
+                    <div class="container container__top">
+                        <h2 class="step-form_heading">Размер контракта организации</h2>
+
+                        <div class="flex_between-sm">
+                            <button class="btn btn__sm" data-value="до 10 млн.">до 10 млн.</button>
+                            <button class="btn btn__sm" data-value="до 60 млн.">до 60 млн.</button>
+                            <button class="btn btn__sm" data-value="до 500 млн.">до 500 млн.</button>
+                            <button class="btn btn__sm" data-value="до 3 млрд.">до 3 млрд.</button>
+                        </div>
+                    </div>
+
+                    <div class="container container__bottom">
+                        <button class="btn-prev">Назад</button>
+
+                        <div class="progress-bar" data-progress="14">
+                            <div class="line"></div>
+                        </div>
+
+                        <button class="btn-next">Пропустить</button>
+                    </div>
+                </div>
+
+                <div class="step hidden" data-step="2">
+                    <div class="container container__top">
+                        <h2 class="step-form_heading">Генподряд</h2>
+
+                        <div class="flex_between-sm">
+                            <button class="btn btn__lg" data-value="Генподряд">Генподряд</button>
+                            <button class="btn btn__lg" data-value="Без генподряда">Без генподряда</button>
+                        </div>
+                    </div>
+
+                    <div class="container container__bottom">
+                        <button class="btn-prev">Назад</button>
+
+                        <div class="progress-bar" data-progress="28">
+                            <div class="line"></div>
+                        </div>
+
+                        <button class="btn-next">Пропустить</button>
+                    </div>
+                </div>
+
+                <div class="step hidden" data-step="3">
+                    <div class="container container__top">
+                        <h2 class="step-form_heading">Тип допуска</h2>
+
+                        <div class="flex_between-sm">
+                            <button class="btn btn__lg" data-value="Обычные работы">Обычные работы</button>
+                            <button class="btn btn__lg" data-value="Опасные работы">Опасные работы</button>
+                        </div>
+                    </div>
+
+                    <div class="container container__bottom">
+                        <button class="btn-prev">Назад</button>
+
+                        <div class="progress-bar" data-progress="42">
+                            <div class="line"></div>
+                        </div>
+
+                        <button class="btn-next">Пропустить</button>
+                    </div>
+                </div>
+
+                <div class="step hidden" data-step="4">
+                    <div class="container container__top">
+                        <h2 class="step-form_heading">Рассрочка</h2>
+
+                        <div class="flex_between-sm">
+                            <button class="btn btn__lg" data-value="Требуется рассрочка">Требуется рассрочка</button>
+                            <button class="btn btn__lg" data-value="Без рассрочки">Без рассрочки</button>
+                        </div>
+                    </div>
+
+                    <div class="container container__bottom">
+                        <button class="btn-prev">Назад</button>
+
+                        <div class="progress-bar" data-progress="56">
+                            <div class="line"></div>
+                        </div>
+
+                        <button class="btn-next">Пропустить</button>
+                    </div>
+                </div>
+
+                <div class="step hidden" data-step="5">
+                    <div class="container container__top">
+                        <h2 class="step-form_heading">Персонал</h2>
+
+                        <div class="flex_between-sm">
+                            <button class="btn btn__lg" data-value="Необходимы специалисты">Необходимы специалисты</button>
+                            <button class="btn btn__lg" data-value="Есть специалисты в штате">Есть специалисты в штате</button>
+                        </div>
+                    </div>
+
+                    <div class="container container__bottom">
+                        <button class="btn-prev">Назад</button>
+
+                        <div class="progress-bar" data-progress="70">
+                            <div class="line"></div>
+                        </div>
+
+                        <button class="btn-next">Пропустить</button>
+                    </div>
+                </div>
+
+                <div class="step hidden" data-step="6">
+                    <div class="container container__top">
+                        <h2 class="step-form_heading">Страховка</h2>
+
+                        <div class="flex_between-sm">
+                            <button class="btn btn__lg" data-value="Требуется">Требуется</button>
+                            <button class="btn btn__lg" data-value="Делаем самостоятельно">Делаем самостоятельно</button>
+                        </div>
+                    </div>
+
+                    <div class="container container__bottom">
+                        <button class="btn-prev">Назад</button>
+
+                        <div class="progress-bar" data-progress="84">
+                            <div class="line"></div>
+                        </div>
+
+                        <button class="btn-next">Пропустить</button>
+                    </div>
+                </div>
+
+                <div class="step hidden" data-step="7">
+                    <div class="container container__top">
+                        <table class="result-table">
+                            <tr class="result-heading">
+                                <!--<th>тип допуска</th>-->
+                                <!--<th>Размер контракта</th>-->
+                                <!--<th>Генподряд</th>-->
+                                <!--<th>Тип допуска</th>-->
+                                <!--<th>Рассрочка</th>-->
+                                <!--<th>Персонал</th>-->
+                                <!--<th>Страховка</th>-->
+                            </tr>
+                            <tr class="result-row">
+                            </tr>
+                        </table>
+
+                        <h2 class="step-form_heading">
+                            Для Вас идет расчет ... Вы узнаете стоимость по телефону<br>
+                            в течение 90 секунд - введите свой номер
+                        </h2>
+                        <div class="progress-bar" data-progress="100">
+                            <div class="line"></div>
+                        </div>
+                    </div>
+
+                    <div class="container container__bottom">
+                        <form action="">
+                            <input type="text" class="input" placeholder="Введите ваш телефон" name="phone">
+                            <input type="hidden" name="result">
+                            <button class="btn-result">Узнать стоимость</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!--------------------------------------------- SCRIPT ---------------------------------------------------------------->
+<script src="script/jquery.js"></script>
+<script src="script/jquery.inputmask.js"></script>
+<script src="script/slick-1.5.0/slick/slick.min.js"></script>
+<script src="script/fancyBox/source/jquery.fancybox.js"></script>
+<script src="script/js.js"></script>
+
+</body>
+</html>

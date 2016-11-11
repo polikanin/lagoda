@@ -1,0 +1,556 @@
+.banners{
+  padding-top: 20px;
+
+  .banner{
+    margin-bottom: 38px;
+  }
+}
+
+.banner{
+  display: block;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto 0 auto;
+  position: relative;
+  z-index: 1;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+
+  &_head{
+    max-width: 341px;
+    width: 100%;
+  }
+
+  &_text{
+    font-size: 12px;
+    font-weight: 400;
+
+    &:first-of-type{
+      margin-bottom: 6px;
+    }
+
+    span{
+      display: block;
+    }
+  }
+
+  &_number{
+    font-size: 27px;
+    font-weight: 400;
+    padding-bottom: 5px;
+  }
+
+  &_heading{
+    font-size: 30px;
+    font-weight: 700;
+
+
+    span{
+      display: block;
+      font-size: 18px;
+      font-weight: 700;
+    }
+  }
+
+  &_subheading{
+    font-size: 18px;
+    font-weight: 300;
+
+    span{
+      display: block;
+    }
+  }
+
+  &_price{
+    font-size: 30px;
+    font-weight: 300;
+
+    span{
+      font-weight: 700;
+    }
+  }
+
+  .btn{
+    width: 175px;
+    height: 45px;
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    @include transition();
+
+
+    &_yellow{
+      border: 3px solid #fc0;
+      color: white;
+
+      &:hover{
+       background-color: #fc0;
+        color: #2e2e2e;
+      }
+    }
+
+    &_white{
+      background-color: white;
+      color: #291428;
+
+      &:hover{
+        background-color: #076aaa;
+        color: white;
+      }
+    }
+  }
+
+  &_logo{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    z-index: 1;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+  /* banner 1 */
+
+  &_1{
+    background-image: url("../image/banners/bg_1.png");
+    padding: 30px 0 39px 54px;
+
+    .head{
+      margin-bottom: 35px;
+    }
+
+    .heading{
+      margin-bottom: 15px;
+    }
+
+    .subheading{
+      margin-bottom: 3px;
+    }
+
+    .price{
+      margin-bottom: 17px;
+    }
+
+    .btn{
+      width: 175px;
+      height: 45px;
+    }
+
+    .logo{
+      top: 35px;
+      right: 46px;
+    }
+  }
+
+  /* banner 2 */
+
+  &_2{
+    background-image: url("../image/banners/bg_2.png");
+    padding: 29px 0 47px 61px;
+
+    .head{
+      margin-bottom: 65px;
+    }
+
+    .heading{
+      color: #ffde00;
+      line-height: 29px;
+      margin-bottom: 12px;
+    }
+
+    .subheading{
+      margin-bottom: 3px;
+    }
+
+    .price{
+    }
+
+    .logo{
+      bottom: 36px;
+      right: 45px;
+    }
+  }
+
+  /* banner 3 */
+
+  &_3{
+    background-image: url("../image/banners/bg_3.png");
+    padding: 29px 0 40px 52px;
+    color: #154398;
+
+    .head{
+      margin-bottom: 53px;
+      color: #1c4097;
+    }
+
+    .heading{
+      line-height: 29px;
+      margin-bottom: 10px;
+    }
+
+    .subheading{
+      margin-bottom: 2px;
+    }
+
+    .price{
+      margin-bottom: 28px;
+    }
+
+    .logo{
+      bottom: 134px;
+      right: 354px;
+    }
+  }
+
+  /* banner 4 */
+
+  &_4{
+    background-image: url("../image/banners/bg_4.png");
+    padding: 30px 0 71px 53px;
+
+    .head{
+      margin-bottom: 73px;
+    }
+
+    .logo{
+      display: inline-block;
+      vertical-align: top;
+      position: static;
+      width: 150px;
+    }
+
+    .heading{
+      display: inline-block;
+      vertical-align: top;
+      width: 235px;;
+      margin-left: 32px;
+      padding-top: 30px;
+      line-height: 29px;
+    }
+  }
+
+  /* banner 5 */
+
+  &_5{
+    background-image: url("../image/banners/bg_5.png");
+    padding: 29px 0 68px 61px;
+    color: white;
+
+    .head{
+      display: inline-block;
+      vertical-align: top;
+      padding-top: 33px;
+    }
+
+    .logo{
+      display: inline-block;
+      vertical-align: top;
+      position: static;
+      margin-left: 45px;
+      margin-bottom: 18px;
+    }
+
+    .heading{
+      line-height: 29px;
+      color: #ffde00;
+      max-width: 390px;
+      width: 100%;
+      margin-bottom: -5px;
+    }
+
+    .price{
+      display: inline-block;
+      vertical-align: top;
+      padding-top: 16px;
+    }
+
+    .btn{
+      display: inline-block;
+      vertical-align: top;
+      width: 244px;
+      margin-left: 40px;
+    }
+  }
+
+  /* banner 6 */
+
+  &_6{
+    background-image: url("../image/banners/bg_6.png");
+    padding: 30px 0 46px 51px;
+
+    .head{
+      margin-bottom: 54px;
+    }
+
+    .heading{
+      line-height: 29px;
+      margin-bottom: 10px;
+      color: #ffde00;
+    }
+
+    .subheading{
+      margin-bottom: 2px;
+    }
+
+    .price{
+      margin-bottom: 20px;
+    }
+
+    .logo{
+      bottom: 39px;
+      right: 48px;
+    }
+  }
+
+  /* banner 7 */
+
+  &_7{
+    background-image: url("../image/banners/bg_7.png");
+    padding: 52px 0 69px 61px;
+
+    .head{
+      margin-bottom: 53px;
+    }
+
+    .heading{
+      line-height: 34px;
+      display: inline-block;
+      vertical-align: top;
+      color: #ffea00;
+      font-size: 36px;
+      padding-top: 32px;
+      max-width: 375px;
+      width: 100%;
+
+      span{
+        font-size: 24px;
+      }
+    }
+
+    .logo{
+      display: inline-block;
+      vertical-align: top;
+      position: static;
+      margin-left: 35px;
+
+    }
+  }
+
+  /* banner 8 */
+
+  &_8{
+    background-image: url("../image/banners/bg_8.png");
+    padding: 29px 0 40px 52px;
+
+    .head{
+      margin-bottom: 40px;
+    }
+
+    .heading{
+      line-height: 32px;
+      margin-bottom: 8px;
+      color: #ffde00;
+    }
+
+    .price{
+      margin-bottom: 29px;
+    }
+
+    .logo{
+      bottom: 124px;
+      right: 225px;
+    }
+  }
+
+  /* banner 9 */
+
+  &_9{
+    background-image: url("../image/banners/bg_9.png");
+    padding: 43px 0 47px 50px;
+    color: #06608a;
+
+    .logo{
+      display: inline-block;
+      vertical-align: top;
+      position: static;
+      margin-bottom: 58px;
+    }
+
+    .head{
+      margin-left: 45px;
+      padding-top: 38px;
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    .heading{
+      line-height: 34px;
+
+      span{
+        font-size: 24px;
+      }
+    }
+
+  }
+
+  /* banner 10 */
+
+  &_10{
+    background-image: url("../image/banners/bg_10.png");
+    padding: 29px 0 101px 52px;
+    .head{
+      margin-bottom: 44px;
+    }
+
+    .logo{
+      display: inline-block;
+      vertical-align: top;
+      position: static;
+    }
+
+    .heading{
+      display: inline-block;
+      vertical-align: top;
+      line-height: 35px;
+      color: #ffea00;
+      font-weight: 700;
+      font-size: 36px;
+      margin-left: 54px;
+      padding-top: 45px;
+
+      span{
+        font-size: 24px;
+      }
+    }
+  }
+
+  /* banner 11 */
+
+  &_11{
+    background-image: url("../image/banners/bg_11.png");
+    padding: 30px 0 47px 52px;
+
+    .head{
+      margin-bottom: 40px;
+    }
+
+    .heading{
+      line-height: 29px;
+      margin-bottom: 10px;
+      color: #ffea00;
+    }
+
+    .price{
+      margin-bottom: 28px;
+    }
+
+    .logo{
+      bottom: 35px;
+      right: 47px;
+    }
+  }
+
+  /* banner 12 */
+
+  &_12{
+    background-image: url("../image/banners/bg_12.png");
+    padding: 29px 0 85px 52px;
+
+    .head{
+      margin-bottom: 60px;
+    }
+
+    .logo{
+      display: inline-block;
+      vertical-align: top;
+      position: static;
+    }
+
+    .heading{
+      display: inline-block;
+      vertical-align: top;
+      line-height: 31px;
+      margin-left: 39px;
+      font-weight: 700;
+      font-size: 36px;
+      padding-top: 36px;
+
+      span{
+        font-size: 24px;
+      }
+    }
+  }
+
+  /* banner 13 */
+
+  &_13{
+    background-image: url("../image/banners/bg_13.png");
+    padding: 29px 0 85px 52px;
+
+    .head{
+      margin-bottom: 60px;
+    }
+
+    .logo{
+      display: inline-block;
+      vertical-align: top;
+      position: static;
+    }
+
+    .heading{
+      display: inline-block;
+      vertical-align: top;
+      line-height: 36px;
+      margin-left: 41px;
+      font-weight: 700;
+      font-size: 36px;
+      padding-top: 25px;
+
+      span{
+        font-size: 24px;
+      }
+    }
+  }
+
+  /* banner 14 */
+
+  &_14{
+    background-image: url("../image/banners/bg_14.png");
+    padding: 29px 0 85px 52px;
+
+    .head{
+      margin-bottom: 60px;
+    }
+
+    .logo{
+      display: inline-block;
+      vertical-align: top;
+      position: static;
+    }
+
+    .heading{
+      display: inline-block;
+      vertical-align: top;
+      line-height: 31px;
+      margin-left: 41px;
+      font-weight: 700;
+      font-size: 30px;
+      padding-top: 36px;
+
+      span{
+        font-size: 18px;
+      }
+    }
+  }
+}

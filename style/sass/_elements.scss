@@ -1,6 +1,3 @@
-body{
-  font-family: Roboto;
-}
 .text-director {
   font-size: 12px;
   line-height: 14px;
@@ -75,6 +72,11 @@ body{
   font-size: 14px;
   font-weight: 300;
   padding-right: 17px;
+  @include transition();
+
+  &:hover{
+    background-image: url("../image/ui/btn-small-hover.png");
+  }
 }
 
 .text-underForm{
@@ -95,6 +97,41 @@ a{
   }
 }
 
+.checkbox{
+  color: black;
+  font-size: 14px;
+  font-weight: 400;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  padding-left: 30px;
+
+  input[type=checkbox]{
+    display: none;
+  }
+
+  span{
+    position: absolute;
+    z-index: 1;
+    width: 18px;
+    height: 18px;
+    display: block;
+    background-color: #ededed;
+    border: 1px solid #ddd;
+    top: 0;
+    left: 0;
+    line-height: 19px;
+    font-size: 21px;
+    color: #0a58bb;
+    text-align: center;
+  }
+
+  input[type=checkbox]:checked + span {
+    &:before{
+      content: "\2713";
+    }
+  }
+}
 
 
 
@@ -106,13 +143,65 @@ a{
 
 
 
+/* FIRST-SCREEN */
 
+.first-screen{
+  color: white;
+  padding: 14px 0 94px 0;
 
+  .items{
+    margin-bottom: 54px;
 
+    .licence{
+      font-weight: 400;
+      font-size: 22px;
 
+      span{
+        display: block;
+        font-size: 14px;
+      }
+    }
+    .for-phones{
+      padding-top: 6px;
+
+      .text{
+        font-size: 12px;
+        font-weight: 400;
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 11px;
+      }
+
+      .phone{
+        font-size: 27px;
+        font-weight: 400;
+        display: inline-block;
+        vertical-align: top;
+
+        &:first-of-type{
+          margin-right: 32px;
+        }
+      }
+    }
+  }
+
+  .logo{
+    margin: 0 auto 17px auto;
+    display: block;
+  }
+
+  .title{
+    color: white;
+    font-size: 48px;
+    font-weight: 300;
+    text-align: center;
+  }
+}
+
+/* block 1 */
 
 .advantages{
-  padding: 146px 0 40px 0;
+  padding: 32px 0 40px 0;
   text-align: center;
 
   .items{
@@ -147,8 +236,11 @@ a{
   }
 }
 
+/* block 2 */
 .calculate-SRO{
-  background-color: #f6f6f6;
+  background-image: url("../image/ui/pattern.png");
+  background-repeat: repeat;
+  background-size: inherit;
   padding: 48px 0 39px 0;
 
   .item{
@@ -225,6 +317,7 @@ a{
   }
 }
 
+/* block 3 */
 .our-help{
   padding: 64px 0 68px 0;
 
@@ -312,7 +405,11 @@ a{
   }
 }
 
+/* block 4 */
 .reliable-SRO{
+  background-image: url("../image/ui/pattern.png");
+  background-repeat: repeat;
+  background-size: inherit;
   padding: 57px 0 42px 0;
   background-color: #f6f6f6;
 
@@ -431,6 +528,7 @@ a{
   }
 }
 
+/* block 5 */
 .free-advice{
   padding: 91px 0 60px 0;
 
@@ -530,6 +628,7 @@ a{
   }
 }
 
+/* block 6 */
 .safety-reasons{
   padding: 52px 0 25px 0;
   color: black;
@@ -698,6 +797,7 @@ a{
   }
 }
 
+/* block 7 */
 .documents-for-entry{
   padding: 25px 0 60px 0;
 
@@ -829,8 +929,11 @@ a{
   }
 }
 
+/* block 8 */
 .cost-of-SRO{
-  background-color: #f6f6f6;
+  background-image: url("../image/ui/pattern.png");
+  background-repeat: repeat;
+  background-size: inherit;
   padding: 41px 0 52px 0;
 
 
@@ -898,6 +1001,7 @@ a{
   }
 }
 
+/* block 9 */
 .how-to-gain-admission{
   padding: 67px 0 30px 0;
 
@@ -999,6 +1103,7 @@ a{
   }
 }
 
+/* block 10 */
 .why-Ladoga{
   padding: 27px 0 62px 0;
 
@@ -1040,9 +1145,12 @@ a{
   }
 }
 
+/* block 11 */
 .reviews{
   padding: 61px 0px 138px 13px;
-  background-color: #f6f6f6;
+  background-image: url("../image/ui/pattern.png");
+  background-repeat: repeat;
+  background-size: inherit;
 
   .title{
     color: black;
@@ -1166,8 +1274,9 @@ a{
   }
 }
 
+/* block 12 */
 .additional-opportunities{
-  padding: 67px 0 50px 0;
+  padding: 67px 0 40px 0;
 
   .left{
     display: inline-block;
@@ -1273,8 +1382,9 @@ a{
   }
 }
 
+/* block 13 */
 .license-MChS{
-  padding: 42px 0 62px 0;
+  padding: 52px 0 62px 0;
   text-align: center;
 
   .text{
@@ -1297,9 +1407,12 @@ a{
   }
 }
 
+/* block 14 */
 .license-Novosib{
   padding: 60px 0 25px 0;
-  background-color: #f6f6f6;
+  background-image: url("../image/ui/pattern.png");
+  background-repeat: repeat;
+  background-size: inherit;
 
   .title{
     color: black;
@@ -1371,11 +1484,10 @@ a{
       display: inline-block;
       vertical-align: top;
       margin-left: 4px;
+      width: 290px;
 
-      img{
-        &:last-of-type{
-          margin-left: 19px;
-        }
+      a{
+        padding: 0 5px;
       }
     }
   }
@@ -1405,45 +1517,7 @@ a{
         }
 
         .checkbox{
-          margin-left: 42px;
-
-          input[type=checkbox]{
-            display: none;
-          }
-
-          input[type=checkbox]:checked + label:before {
-            content: "\2713";
-            font-size: 21px;
-            color: #0a58bb;
-            text-align: center;
-            line-height: 19px;
-            width: 18px;
-            height: 18px;
-            display: block;
-            background-color: #ededed;
-            border: 1px solid #ddd;
-          }
-
-          label{
-            color: black;
-            font-size: 14px;
-            font-weight: 400;
-            position: relative;
-            z-index: 1;
-            cursor: pointer;
-            &:before{
-              position: absolute;
-              z-index: 100;
-              content: '';
-              width: 18px;
-              height: 18px;
-              display: block;
-              background-color: #ededed;
-              border: 1px solid #ddd;
-              top: 0;
-              left: -30px;
-            }
-          }
+          margin-left: 11px;
         }
 
         .btn-2{
@@ -1460,6 +1534,7 @@ a{
   }
 }
 
+/* block 15 */
 .required-documents{
   padding: 44px 0 45px 0;
 
@@ -1532,8 +1607,11 @@ a{
   }
 }
 
+/* block 16 */
 .our-proposals{
-  background-color: #f6f6f6;
+  background-image: url("../image/ui/pattern.png");
+  background-repeat: repeat;
+  background-size: inherit;
   padding: 39px 0 45px 0;
   text-align: center;
 
@@ -1581,6 +1659,7 @@ a{
   }
 }
 
+/* block 17 */
 .contact-save{
   padding: 47px 0 41px;
 
@@ -1630,9 +1709,24 @@ a{
     font-size: 18px;
     font-weight: 400;
     margin-top: 43px;
+    position: relative;
+    z-index: 1;
+
+    &:after{
+      position: absolute;
+      z-index: 1;
+      width: 994px;
+      height: 1px;
+      background-color: #ddd;
+      display: block;
+      content: '';
+      top: 70px;
+      left: 0;
+    }
   }
 }
 
+/* block 18 */
 .who-need-a-license{
   padding: 52px 0 19px 0;
 
@@ -1692,10 +1786,13 @@ a{
   }
 }
 
+/* block 19 */
 .cost-of-services{
   padding: 64px 0 35px 0;
   text-align: center;
-  background-color: #f6f6f6;
+  background-image: url("../image/ui/pattern.png");
+  background-repeat: repeat;
+  background-size: inherit;
 
   .items{
     .item{
@@ -1740,6 +1837,7 @@ a{
   }
 }
 
+/* block 20 */
 .additional-expenses{
   padding: 37px 0 48px 0;
 
@@ -1789,10 +1887,13 @@ a{
   }
 }
 
+/* block 21 */
 .obtaining-terms{
   padding: 43px 0 45px 0;
   color: #17161a;
-  background-color: #f6f6f6;
+  background-image: url("../image/ui/pattern.png");
+  background-repeat: repeat;
+  background-size: inherit;
 
   .subtitle{
     font-size: 24px;
@@ -1840,6 +1941,7 @@ a{
   }
 }
 
+/* block 22 */
 .why-Ladoga-2{
   padding: 33px 0 51px 0;
 
@@ -1882,9 +1984,12 @@ a{
   }
 }
 
+/* block 23 */
 .reviews-2{
   padding: 58px 0px 138px 13px;
-  background-color: #f6f6f6;
+  background-image: url("../image/ui/pattern.png");
+  background-repeat: repeat;
+  background-size: inherit;
 
   .title{
     color: black;
@@ -1900,7 +2005,7 @@ a{
     margin-bottom: 57px;
   }
 
-  .reviews-2-slider{
+  .reviews-slider{
     position: relative;
     z-index: 100;
 
@@ -2008,8 +2113,9 @@ a{
   }
 }
 
+/* block 24 */
 .additional-opportunities-2{
-  padding: 57px 0 152px 0;
+  padding: 57px 0 49px 0;
 
   .left{
     display: inline-block;
@@ -2115,9 +2221,12 @@ a{
   }
 }
 
+/* block 25 */
 .certificate-ISO{
   padding: 32px 0 58px 0;
-  background-color: #f6f6f6;
+  background-image: url("../image/ui/pattern.png");
+  background-repeat: repeat;
+  background-size: inherit;
 
   .left{
     display: inline-block;
@@ -2172,6 +2281,10 @@ a{
     .for-sert{
       width: 606px;
       margin-bottom: 19px;
+
+      a{
+       padding: 0 3px;
+      }
     }
 
     .subtitle-end{
@@ -2223,6 +2336,7 @@ a{
   }
 }
 
+/* block 26 */
 .set-of-documents{
   padding: 49px 0 59px 0;
 
@@ -2285,10 +2399,13 @@ a{
   }
 }
 
+/* block 27 */
 .certification-procedure{
   padding: 53px 0 61px 0;
   text-align: center;
-  background-color: #f6f6f6;
+  background-image: url("../image/ui/pattern.png");
+  background-repeat: repeat;
+  background-size: inherit;
 
   .title{
     color: #1c1c1e;
@@ -2383,6 +2500,7 @@ a{
   }
 }
 
+/* block 28 */
 .viewed-SRO{
   padding: 52px 0 0 0;
 
@@ -2448,6 +2566,7 @@ a{
   }
 }
 
+/* block 29 */
 .unique-records{
   padding: 61px 0 44px 0;
 
@@ -2482,9 +2601,12 @@ a{
   }
 }
 
+/* block 30 */
 .reviews-3{
   padding: 58px 0px 138px 13px;
-  background-color: #f6f6f6;
+  background-image: url("../image/ui/pattern.png");
+  background-repeat: repeat;
+  background-size: inherit;
 
   .title{
     color: black;
@@ -2500,7 +2622,7 @@ a{
     margin-bottom: 57px;
   }
 
-  .reviews-2-slider{
+  .reviews-slider{
     position: relative;
     z-index: 100;
 
@@ -2608,8 +2730,9 @@ a{
   }
 }
 
+/* block 31 */
 .additional-opportunities-3{
-  padding: 62px 0 100px 0;
+  padding: 62px 0 36px 0;
 
   .left{
     display: inline-block;
@@ -2715,8 +2838,9 @@ a{
   }
 }
 
+/* block 32 */
 .opening-OOO{
-  padding: 79px 0 53px 0;
+  padding: 38px 0 53px 0;
   text-align: center;
 
   .text{
@@ -2735,9 +2859,12 @@ a{
   }
 }
 
+/* block 33 */
 .to-get-output{
   padding: 42px 0 36px 0;
-  background-color: #f6f6f6;
+  background-image: url("../image/ui/pattern.png");
+  background-repeat: repeat;
+  background-size: inherit;
 
   .left{
     display: inline-block;
@@ -2751,6 +2878,12 @@ a{
       font-weight: 500;
       line-height: 30px;
       margin-bottom: 49px;
+    }
+
+    .for-sert{
+      a{
+        padding: 0 3px;
+      }
     }
   }
 
@@ -2800,6 +2933,7 @@ a{
   }
 }
 
+/* block 34 */
 .Included-in-price{
   padding: 62px 0 0 0;
 
@@ -2911,6 +3045,7 @@ a{
   }
 }
 
+/* block 35 */
 .on-registration-costs{
   padding: 48px 0 76px 0;
   text-align: center;
@@ -2951,9 +3086,12 @@ a{
   }
 }
 
+/* block 36 */
 .necessary-information{
   padding: 50px 0 32px 0;
-  background-color: #f6f6f6;
+  background-image: url("../image/ui/pattern.png");
+  background-repeat: repeat;
+  background-size: inherit;
 
   .title{
     color: #252525;
@@ -3009,11 +3147,12 @@ a{
   }
 }
 
+/* block 37 */
 .application-for-registration{
   padding: 56px 0 54px 0;
   background-image: url("../image/application-for-registration/bg.png");
-  background-repeat: no-repeat;
   background-position: bottom;
+  background-size: auto;
 
   .for-form{
     width: 1000px;
@@ -3059,9 +3198,12 @@ a{
   }
 }
 
+/* block 38 */
 .reviews-4{
   padding: 66px 0 138px 13px;
-  background-color: #f6f6f6;
+  background-image: url("../image/ui/pattern.png");
+  background-repeat: repeat;
+  background-size: inherit;
   .title{
     color: black;
     font-size: 24px;
@@ -3184,6 +3326,7 @@ a{
   }
 }
 
+/* block 39 */
 .additional-opportunities-4{
   padding: 56px 0 50px 0;
 

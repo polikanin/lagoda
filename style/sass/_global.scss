@@ -1,6 +1,7 @@
 body{
   padding: 0;
   margin: 0;
+  font-family: Roboto;
 }
 .wrapper{
   width: $width-lg;
@@ -29,6 +30,7 @@ header, section, footer{
   box-sizing: border-box;
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
 }
 button,
@@ -39,6 +41,7 @@ input{
   background-color: transparent;
   outline: none;
   border-radius: 0;
+  font-family: inherit;
 }
 
 button{
@@ -60,3 +63,61 @@ button{
 
   }
 }
+
+
+.btn-index{
+  height: 33px;
+  color: #2e2e2e;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 32px;
+  padding: 0 10px 0 0 ;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include transition();
+
+  &.btn-ind-1{
+    width: 139px;
+    height: 32px;
+    background-image: url("../image/index/btn-ind-1.png");
+
+    &:hover{
+      background-image: url("../image/index/btn-ind-1-hover.png");
+    }
+  }
+
+  &.btn-ind-2{
+    width: 128px;
+    background-image: url("../image/index/btn-ind-2.png");
+
+    &:hover{
+      background-image: url("../image/index/btn-ind-2-hover.png");
+    }
+  }
+  &.btn-ind-3{
+    width: 137px;
+    background-image: url("../image/index/btn-ind-3.png");
+
+    &:hover{
+      background-image: url("../image/index/btn-ind-3-hover.png");
+    }
+  }
+  &.btn-ind-4{
+    width: 165px;
+    background-image: url("../image/index/btn-ind-4.png");
+
+    &:hover{
+      background-image: url("../image/index/btn-ind-4-hover.png");
+    }
+  }
+  &.btn-ind-5{
+    width: 291px;
+    background-image: url("../image/index/btn-ind-5.png");
+
+    &:hover{
+      background-image: url("../image/index/btn-ind-5-hover.png");
+    }
+  }
+}
+
